@@ -890,3 +890,17 @@ body.is-thump .wall>.fr:not(.no-woof) .fr-link{pointer-events:none;cursor:defaul
  .wall .display{padding-top:12px;padding-bottom:12px}
  .wall .display>.d-row{padding-top:8px}.cta-hero{height:44px}}
 @media(orientation:landscape) and (max-height:520px) and (max-width:820px){.d-show{aspect-ratio:4.8}.wall .display .d-lede{font-size:13px;line-height:1.35}.wall .display .d-lede span{display:none}.wall .display .d-eyebrow{font-size:10.5px}.wall .display{margin-bottom:8px}}
+
+/* After sending, the form gives way to the confirmation (the flex layout had been overriding [hidden]). */
+.d-startbox .project-form[hidden],.d-startbox .project-done[hidden]{display:none!important}
+.d-startbox .project-done{margin-top:18px}
+
+/* Phones: an open record takes the place of the display (under the stream count and hue line, above the sleeves), not a band above everything. */
+@media(max-width:820px){
+ body.has-player:not(.is-away) main{display:flex;flex-direction:column}
+ body.has-player:not(.is-away) #records{display:contents}
+ body.has-player:not(.is-away) #player{order:1;margin:10px var(--gutter) 6px;border:1px solid #2a2a27}
+ body.has-player:not(.is-away) #wall{order:2}
+ body.has-player:not(.is-away) #empty-state{order:3}
+ body.has-player:not(.is-away) #wall>.display{display:none}
+}
