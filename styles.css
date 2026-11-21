@@ -880,3 +880,13 @@ body.page-about,body.page-start,body.page-contact,body.is-away #route{--paper:#0
 body.page-about .f input::placeholder,body.page-start .f input::placeholder,body.page-start .f textarea::placeholder,body.is-away #route .f input::placeholder,body.is-away #route .f textarea::placeholder{color:#6f6e67}
 .display .d-nav a.d-x,.display .d-nav a.d-x[href="/"]:not(.cta){display:inline-block}
 @media(min-width:821px){body.is-about.is-about-stack .wall .display .d-show,body.is-about.is-about-stack .wall .display .d-show.is-matrix{top:0!important;bottom:0!important}}
+
+/* Woofers are not links. */
+body.is-thump .wall>.fr:not(.no-woof) .fr-link{pointer-events:none;cursor:default}
+/* Phones on their side: a short display, so the sleeves are a flick away. */
+@media(orientation:landscape) and (max-height:520px){
+ .wall .display .d-title,.display.is-solo .d-title{font-size:8.6cqw;white-space:nowrap;line-height:.9}
+ .wall .display .d-head{min-height:92px}.display.is-least .d-head{height:92px}
+ .wall .display{padding-top:12px;padding-bottom:12px}
+ .wall .display>.d-row{padding-top:8px}.cta-hero{height:44px}}
+@media(orientation:landscape) and (max-height:520px) and (max-width:820px){.d-show{aspect-ratio:4.8}.wall .display .d-lede{font-size:13px;line-height:1.35}.wall .display .d-lede span{display:none}.wall .display .d-eyebrow{font-size:10.5px}.wall .display{margin-bottom:8px}}
