@@ -904,3 +904,5 @@ body.is-thump .wall>.fr:not(.no-woof) .fr-link{pointer-events:none;cursor:defaul
  body.has-player:not(.is-away) #empty-state{order:3}
  body.has-player:not(.is-away) #wall>.display{display:none}
 }
+
+.project-done [hidden]{display:none!important}
